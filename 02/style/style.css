@@ -1,0 +1,50 @@
+*{
+    text-decoration: underline;
+}
+body{
+    background-color: yellowgreen;
+}
+/* p{
+    font-size: 30px;
+} */
+p,h1{
+    font-size: 30px;
+}
+section p{
+    font-size: 15px;
+}
+article p{
+    font-size: 45px;
+}
+.container-text{
+    font-size: 14px;
+    color:#fff;
+}
+.container-text.big{
+    font-size: 20px;
+}
+/* #importantText{
+    font-size: 15px;
+    color:brown;
+} */
+/* ul li{
+    background-color: blueviolet;
+} */
+ul li:first-child{
+    background-color: blueviolet;
+}
+ul li:last-child{
+    background-color: orange;
+}
+ul li:nth-child(2){
+    background-color: darkgreen;
+}
+ul li:nth-child(3){
+    background-color: darkgreen;
+}
+p{
+    color:blue;
+}
+p{
+    color:orangered;
+}
