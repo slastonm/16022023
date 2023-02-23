@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+.secondary-font{
+    font-family: 'Roboto', sans-serif;
+}
+div{
+    /* color:rgb(20, 175, 33);  */
+    /* color: #FAC960; */
+    color:rgba(20, 175, 33, 0.184);  /* 0-1 opacity */
+    /* color:hsla(hue, saturation, lightness, alpha) */
+    color:hsl(100, 60%, 75%);
+    background-color: black;
+    /* width: 500px; */
+    /* height: 600px; */
+    /* padding: 50px 100px; */
+    /* padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 150px; */
+    /* margin: 100px auto; */
+    /* margin-bottom: 100px; */
+    /* margin-top: 50px;
+    margin-left: 1600px;
+    margin-right: 300px; */
+    /* text-align: center; */
+    /* text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    border: 3px double yellow;
+    border-radius: 20px; */
+}
+input{
+    border: none;
+    background-color: #ccc;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color:green;
+}
+input::placeholder{
+    color:red;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+span{
+    background-color: yellow;
+    padding: 50px;
+    margin: 50px;
+    height: 40px;
+    display: inline-block;
+}
+.left,.right{
+    width: 100px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    padding: 10px 5px;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+button{
+    /* width: 100px; */
+    /* height: 54px; */
+    padding: 20px 40px;
+}
+button:hover{
+    background-color: yellow;
+    border: 2px solid red;
+    color:red;
+}
+a{
+    color:yellowgreen;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+div:empty{
+    background-color: red;
+}
+header{
+    background-color: sandybrown;
+    /* width: 1400px; */
+    margin: 0 auto;
+}
+.menu-list{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.menu-list li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.menu-list li>a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 30px;
+}
+.menu-list li:last-child{
+    margin-right: 10px;
+}
