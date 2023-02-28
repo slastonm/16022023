@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+    margin: 0 auto;
+    /* max-width: 1400px; */
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.mobile-access-block{
+    background-color: #e96868;
+    padding: 100px 0;
+    height: 300px;
+}
+a{
+    text-decoration: none;
+}
+.left,
+.right{
+    display: inline-block;
+    border: 1px solid black;
+    vertical-align: top;
+}
+.left{
+    width: 460px;
+    padding: 10px;
+}
+.right{
+    padding: 40px 0;
+    width: 460px;
+}
+.img-logo{
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+}

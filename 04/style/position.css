@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: black;
+    padding: 50px 0;
+    /* position: sticky; */
+    position: fixed;
+    top:0;
+    z-index: 4;
+}
+section{
+    padding: 300px;
+    background-color: #ccc;
+    position: relative;
+}
+.position-block{
+    position: absolute;
+    /* top: 10px; */
+    /*left: 20px; */
+    right:100px;
+    bottom:0;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    z-index: 2;
+}
+.position-block.up{
+    background-color: gold;
+    z-index: 3;
+    right: 200px;
+    top: 40px;
+}
+.position-block.down{
+    background-color: rgb(24, 135, 7);
+    z-index: 1;
+    right: 300px;
+    top: 60px;
+}
+.prev,
+.next{
+    position: absolute;
+    top:100px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+.prev{
+    left: 50px;
+}
+.next{
+    right: 50px;
+}
+.rel-btn{
+    position: relative;
+    top: 10px;
+}
+.scroll-up-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 3;
+    padding: 20px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.458);
+}
+.info{
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+}
+.info>p{
+    position: absolute;
+    /* top:-100px; */
+    left: -300px;
+}
+.info:hover p{
+    /* top: 50px; */
+    left: 40px;
+}
+h1{
+    padding: 10px;
+    position: relative;
+}
+h1::before{
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: red;
+    position: relative;
+    left: -5px;
+    top:-5px;
+
+}
+h1::after{
+    content: "";
+}
+table{
+    width: 1500px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+th,td{
+    border: 1px solid red; 
+}
+th:nth-child(2){
+    padding: 40px;
+    width: 200px;
+}
+th:nth-child(3){
+    padding: 10px;
+}
+.table-block{
+    display: table;
+    border: 2px solid violet;
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: table-row;
+}
+.cell{
+    display: table-cell;
+    border: 2px solid violet;
+}

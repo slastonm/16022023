@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.clerfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    width: 1200px;
+    background-color: yellow;
+    margin: 0 auto;
+    /* height: 200px; */
+    /* overflow: auto; */
+}
+.left{
+    width: 600px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.303);
+    /* clear: both; */
+}
+.right{
+    width: 400px;
+    background-color: black;
+    float: right;
+}
