@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+.clerfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo{
+    width:50%;
+    float: left;
+    /* height: 100px; */
+    background-color: black;
+}
+.logo>img{
+    width: 100%;
+    /* max-width: 150px; */
+    min-width: 200px;
+}
+.nav{
+    width: 33.33%;
+    float: right;
+    height: 100px;
+    background-color: rgb(29, 183, 11);
+}
+/* .button-block{
+    width: 33.33%;
+    float: left;
+} */
+.container {
+    width: 49%;
+    margin: 0 auto;
+    border: 1px solid red;
+    
+}
+.parallax{
+    padding-top: 200px;
+    background-image: url("../img/bg.jpeg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header, section{
+    padding: 50px;
+    background-color: #fff;
+    margin-bottom: 300px;
+}
