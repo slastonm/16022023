@@ -1,0 +1,69 @@
+.card{
+    width: 220px;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.card:hover{
+    opacity: 0.9;
+}
+.card.person1{
+    background-image: url("../path");
+}
+.card.person2{
+    background-image: url("../path");
+}
+li{
+    list-style: none;
+    position: relative;
+
+    display: inline-block;
+    background-image: url();
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding: 10px 30px;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+li>a:hover{
+    border-bottom: 1px solid white;
+}
+/* li::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: 5px;
+
+}
+ul li:last-child{
+    padding-right: 0px;
+}
+ul li:last-child::after{
+    display: none;
+} */
+
+button.fb{
+    display: block;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url("img/sprite-icon-29.jpg");
+    background-position: -17px -16px;
+    overflow: hidden;
+    border: 1px solid blue;
+}
+.fb.active{
+    background-position: -17px -98px; 
+}
+.fb.disabled{
+    background-position: -17px -184px; 
+}
