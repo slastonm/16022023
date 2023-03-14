@@ -1,0 +1,111 @@
+.alert {
+    border: 1px solid red;
+}
+// .sectio{
+//     padding: 10px;
+// }
+// .sectio h1{
+//     color:red;
+// }
+// .section h1 span{
+//     color:green;
+// } 
+// .section:hover{
+//     background-color: red;
+// }
+$section-bg-hover:red;
+$section-title-color:blueviolet;
+$section-title-color-hover:white;
+.section{
+    padding: 10px;
+    &:hover{
+        background-color: $section-bg-hover;
+    }
+    &-title{
+        color:$section-title-color;
+        &::after{
+            content: "!!!";
+        }
+        &:hover{
+            color:$section-title-color-hover;
+            &::after{
+                content: "$$$$$";
+            }
+        }
+    }
+    // h1{
+    //     color: red;
+    //     span{
+    //         color:green;
+    //     }
+    // }
+    @media(max-width:1600px){
+        padding: 50px;
+        &:hover{
+            background-color: greenyellow;
+        }
+    }
+}
+@mixin style-block{
+    // width: 700px;
+    margin: 0 auto;
+    background-color: yellow;
+    padding: 10px;
+}
+@mixin avatar-block($size, $radius: 0){
+    width: $size;
+    height: $size;
+    @if $radius !=0{
+        border-radius:$radius;
+    }
+}
+.nav{
+    @include style-block;
+    @include avatar-block(400px,$radius: 200px );
+}
+header{
+    @include style-block;
+    @include avatar-block(400px, $radius:0);
+}
+.btn{
+    padding: 10px 20px;
+    color:black;
+    &:hover{
+        color:white;
+    }
+}
+.btn-green{
+    @extend .btn;
+    background-color: green;
+}
+.btn-info{
+    @extend .btn;
+    // background-color: rgb(2, 54, 71);
+    background-color: rgb(79, 206, 15);
+
+    &:hover{
+        // background-color: lighten(rgb(2, 54, 71), 10%);
+        // background-color: darken(rgb(15, 159, 206), 20%);
+        background-color: desaturate(rgb(79, 206, 15), 80%);
+
+
+    }
+}
+
+.class-name{
+    div{
+        p{
+            span{
+                i{
+                    color:black;
+                }
+            }
+        }
+    }
+}
+.class-name{
+    div p{ color:red;}
+    p span i{
+        color:black;
+    }
+}
