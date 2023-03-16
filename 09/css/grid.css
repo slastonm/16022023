@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+.container{
+    display:grid;
+    /* display: inline-grid; */
+    /* grid-template-columns: 150px 100px 300px; */
+    /* grid-template-columns: 10em 100px 20em; */
+    /* grid-template-columns: 35vw 30vw 35vw; */
+    /* grid-template-columns: repeat(2, 20vw) 30vw 20vw 10vw; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-columns:50px auto; */
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 2fr) minmax(100px, 1fr) ;
+    grid-template-rows: 20vh 20vh;
+    /* grid-template-rows: 300px 700px; */
+    /* grid-column-gap: 40px;
+    grid-row-gap: 20px; */
+    grid-gap: 50px 50px;
+}
+
+.container div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+.container div:nth-child(2){
+    grid-column-start: -1;
+    grid-column-end: -3;
+    grid-row-start: -1;
+    grid-row-end:-2;
+}
+/* .container div:nth-child(5){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:5;
+} */
+
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.pink{
+    background-color: pink;
+}
+.gray{
+    background-color: gray;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+    grid-template-areas: 
+    "header header header"
+    "aside . main"
+    "footer footer footer";
+}
+header{
+    grid-area: header;
+}
+aside{
+    grid-area:aside;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+@media(max-width:1400px){
+    .grid{
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+}
+.more-grid{
+    display: grid;
+    height: 700px;
+    border: 10px solid black;
+    grid-template: 200px 250px/300px 300px;
+    /* justify-items: center;
+    align-items: center; */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-content: center; */
+}
+.item{
+    justify-self: center;
+    align-self: center;
+    /* start / end / center / stretch */
+}
