@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: #ccc;
+}
 .container{
     width: 50%;
     margin: 0 auto;
@@ -78,15 +81,42 @@
     color:white;
     width: 100%;
 }
+.transform{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    transition: all 2s;
+    border: 2px solid black;
+}
+.transform:hover{
+    /* transform: rotate(120deg); */
+    /* rotate: -45deg; */
+    /* transform: scale(1.2,1.5); */
+    /* transform: skew(-20deg, 0deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    transform: rotateZ(180deg);
 
+}
 .image{
     width: 200px;
     margin: 0 auto;
+    /* overflow: hidden; */
 }
 .image>img{
     width: 100%;
     transition: all 2s;
 }
 .image>img:hover{
-    scale: 0.7 0.7;
+    /* scale: 1.7 0.7; */
+    /* translate: -50% -100px; */
+    transform: translate(20px, 200px);
+}
+svg{
+    fill:red;
+    stroke: gold;
+    stroke-width: 3px;
+}
+svg path{
+    fill: black;
 }
